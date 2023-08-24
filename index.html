@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>BioCenter</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="estilos.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+<nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img id="logo" src="logo.png" style="max-width: 75px;height: auto;"></a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Tu Resultado</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contactanos </a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <section class="home">
+        <section id="container-slider">    
+            <a href="javascript: funcionEjecutar('anterior');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+            <a href="javascript: funcionEjecutar('siguiente');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+            <ul class="listslider">
+              <li><a itlist="itList_0" href="#" border: none !important;></a></li>
+              <li><a itlist="itList_1" href="#"></a></li>
+              <li><a itlist="itList_2" href="#"></a></li>
+            </ul>
+            <ul id="slider">
+              <li style="background-image: url('imagen4.jpg'); z-index:0; opacity: 1;">
+                <div class="content_slider" >
+                  <div>
+                <h2>¿Quieres Saber Cual es tu Perfil medico?</h2>
+                <a href="https://api.whatsapp.com/send/?phone=584248926510&text&type=phone_number&app_absent=0" target="_blank" class="btnSlider">Acceder</a>
+              </div>
+                </div>
+              </li>
+              <li style="background-image: url('imagen3.jpg'); ">
+                <div class="content_slider" >
+                  <div>
+               
+                <a href="https://www.instagram.com/biocenter.laboratorios/" target="_blank" class="btnSlider">Acceder</a>
+              </div>
+                </div>
+              </li>
+              <li style="background-image: url('imagen1.jpg'); ">
+                <div class="content_slider" >
+                  <div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>¿Donde Nos Ubicamos?</h2>
+                <a href="https://goo.gl/maps/oxfzJGiTUL7b3RcJ6" target="_blank" class="btnSlider">Acceder</a>
+              </div>
+                </div>
+              </li>
+           </ul>
+         </section>
+    </section>
+    <div style="height: 1000px">
+        <!-- just to make scrolling effect possible -->
+			<h2 class="myH2">Avanzando en el mundo del Bioanálisis: Compartiendo conocimientos y experiencias"</h2>
+			<p class="myP"></p>
+			<p class="myP">Bienvenidos al foro del laboratorio de bioanálisis más exitoso y llamativo. Este espacio está diseñado para que todos los profesionales y entusiastas del campo del bioanálisis puedan compartir conocimientos, experiencias y discutir los avances más recientes en el área. ¡Únete a nosotros y se parte de esta comunidad apasionada por la ciencia!</a>)
+			and Dicson </p>
+			<p class="myP">Categorías del foro:</p>
+			<p class="myP">Albi</p>
+				<p class="myP">
+          Novedades y avances en el campo del bioanálisis: En esta sección, podrás mantenerte al día con las últimas noticias, descubrimientos y avances científicos relacionados con el bioanálisis. Aquí, los expertos podrán compartir estudios y publicaciones relevantes, y todos podrán comentar y discutir sobre ellos.
+
+          Técnicas y metodologías: Esta categoría está dedicada a discutir y compartir las diferentes técnicas y metodologías utilizadas en el laboratorio de bioanálisis. Desde técnicas de extracción de muestras hasta análisis instrumentales, aquí encontrarás información detallada y podrás plantear preguntas o brindar consejos a otros miembros.
+          
+          Casos de estudio y resolución de problemas: En esta sección, los miembros del foro podrán compartir casos de estudio interesantes y desafiantes que hayan encontrado en su práctica diaria. Aquí podrás recibir consejos, sugerencias y diferentes enfoques para resolver problemas técnicos o interpretar resultados.
+          
+          Oportunidades y colaboraciones: ¿Buscas oportunidades de empleo, becas o colaboraciones en proyectos de investigación? En esta categoría, podrás encontrar anuncios y oportunidades relacionadas con el campo del bioanálisis. También podrás compartir tus propias ofertas o solicitudes para establecer colaboraciones.
+          
+          Recursos y recomendaciones: En este espacio, los miembros del foro podrán recomendar libros, revistas, conferencias y otros recursos útiles relacionados con el bioanálisis. Aquí podrás encontrar y compartir información valiosa que te ayudará a seguir aprendiendo y creciendo en tu carrera profesional.
+          
+          ¡Espero que este foro sea un lugar de encuentro y aprendizaje para todos los apasionados del bioanálisis! No dudes en registrarte y comenzar a participar en las diferentes conversaciones. Juntos, podemos impulsar el campo del bioanálisis hacia un futuro exitoso y llamativo. ¡Te esperamos!
+          
+			</p>
+    </div>
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
